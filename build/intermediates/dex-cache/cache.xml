@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.2.42\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e5f81129dfb3d02df80126512bc98278ed2bb40a">
+        <dex dex="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\pre-dexed\debug\classes-3bdb74e1f7fdada9a09ffee96ad2d706437e6b4b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\libs\Parse-1.6.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2a812174191af5a4513a873602a765b0171f252c">
+        <dex dex="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\pre-dexed\debug\Parse-1.6.0-7e1fe107a6b83ce4318ee79370c3e70168af5d99.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rohit\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-b9b5af0ceffb35b3ecad0888ca9d514c6528f22b.jar" />
+    </item>
+
+</items>
