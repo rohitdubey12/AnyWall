@@ -16,11 +16,28 @@
         <dex dex="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\pre-dexed\debug\Parse-1.6.0-7e1fe107a6b83ce4318ee79370c3e70168af5d99.jar" />
     </item>
     <item
-        jar="C:\Users\Rohit\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-b9b5af0ceffb35b3ecad0888ca9d514c6528f22b.jar" />
+        jar="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false" revision="21.1.2" sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex
+            dex="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\pre-dexed\debug\classes-4c21eff499f9f2c95e8bee9c59395ad9f54b0d34.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rohit\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jumboMode="false" revision="21.1.2" sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex
+            dex="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.0-b952dab45a9e245c38690a0cf7143e91bcd2c0ac.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false" revision="21.1.2" sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex
+            dex="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-ef1a749f43a99437d0ffaf37c14da3ceb341e786.jar" />
+    </item>
+    <item
+        jar="C:\Users\Rohit\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false" revision="21.1.2" sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex
+            dex="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-61099547c722d565c2186df90019b47ec5bc9bd6.jar" />
     </item>
 
 </items>

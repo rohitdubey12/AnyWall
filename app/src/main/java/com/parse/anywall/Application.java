@@ -4,54 +4,56 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.parse.Parse;
+import com.parse.ParseInstallation;
 import com.parse.ParseObject;
 
 public class Application extends android.app.Application {
-  // Debugging switch
-  public static final boolean APPDEBUG = false;
+    // Debugging switch
+    public static final boolean APPDEBUG = false;
 
-  // Debugging tag for the application
-  public static final String APPTAG = "AnyWall";
+    // Debugging tag for the application
+    public static final String APPTAG = "AnyWall";
 
-  // Used to pass location from MainActivity to PostActivity
-  public static final String INTENT_EXTRA_LOCATION = "location";
+    // Used to pass location from MainActivity to PostActivity
+    public static final String INTENT_EXTRA_LOCATION = "location";
 
-  // Key for saving the search distance preference
-  private static final String KEY_SEARCH_DISTANCE = "searchDistance";
+    // Key for saving the search distance preference
+    private static final String KEY_SEARCH_DISTANCE = "searchDistance";
 
-  private static final float DEFAULT_SEARCH_DISTANCE = 250.0f;
+    private static final float DEFAULT_SEARCH_DISTANCE = 250.0f;
 
-  private static SharedPreferences preferences;
+    private static SharedPreferences preferences;
 
-  private static ConfigHelper configHelper;
+    private static ConfigHelper configHelper;
 
-  public Application() {
-  }
+    public Application() {
+    }
 
-  @Override
-  public void onCreate() {
-    super.onCreate();
+    public static float getSearchDistance() {
+        return preferences.getFloat(KEY_SEARCH_DISTANCE, DEFAULT_SEARCH_DISTANCE);
+    }
 
-    ParseObject.registerSubclass(AnywallPost.class);
-    Parse.initialize(this, "0K85aM0HnZl6Md3aticYVbUCOAuoJBsZ8BzVSr5K",
-        "2xTyrm1xPcd4jmZ2K2QjttNc5X76gkSANZiLX7x8");
+    public static void setSearchDistance(float value) {
+        preferences.edit().putFloat(KEY_SEARCH_DISTANCE, value).commit();
+    }
 
-    preferences = getSharedPreferences("com.parse.anywall", Context.MODE_PRIVATE);
+    public static ConfigHelper getConfigHelper() {
+        return configHelper;
+    }
 
-    configHelper = new ConfigHelper();
-    configHelper.fetchConfigIfNeeded();
-  }
+    @Override
+    public void onCreate() {
+        super.onCreate();
 
-  public static float getSearchDistance() {
-    return preferences.getFloat(KEY_SEARCH_DISTANCE, DEFAULT_SEARCH_DISTANCE);
-  }
+        ParseObject.registerSubclass(AnywallPost.class);
+        Parse.initialize(this, "0K85aM0HnZl6Md3aticYVbUCOAuoJBsZ8BzVSr5K",
+                "2xTyrm1xPcd4jmZ2K2QjttNc5X76gkSANZiLX7x8");
+        ParseInstallation.getCurrentInstallation().saveInBackground();
 
-  public static ConfigHelper getConfigHelper() {
-    return configHelper;
-  }
+        preferences = getSharedPreferences("com.parse.anywall", Context.MODE_PRIVATE);
 
-  public static void setSearchDistance(float value) {
-    preferences.edit().putFloat(KEY_SEARCH_DISTANCE, value).commit();
-  }
+        configHelper = new ConfigHelper();
+        configHelper.fetchConfigIfNeeded();
+    }
 
 }

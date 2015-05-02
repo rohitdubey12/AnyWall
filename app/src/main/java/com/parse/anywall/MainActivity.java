@@ -1,11 +1,5 @@
 package com.parse.anywall;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
@@ -36,6 +30,7 @@ import com.google.android.gms.location.LocationClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.CancelableCallback;
 import com.google.android.gms.maps.GoogleMap.OnCameraChangeListener;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -52,6 +47,12 @@ import com.parse.ParseException;
 import com.parse.ParseGeoPoint;
 import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class MainActivity extends FragmentActivity implements LocationListener,
     GooglePlayServicesClient.ConnectionCallbacks,
@@ -103,22 +104,18 @@ public class MainActivity extends FragmentActivity implements LocationListener,
 
   // Maximum post search radius for map in kilometers
   private static final int MAX_POST_SEARCH_DISTANCE = 100;
-
+  // Fields for helping process map and location changes
+  private final Map<String, Marker> mapMarkers = new HashMap<String, Marker>();
   /*
    * Other class member variables
    */
   // Map fragment
   private SupportMapFragment mapFragment;
-
   // Represents the circle around a map
   private Circle mapCircle;
-
   // Fields for the map radius in feet
   private float radius;
   private float lastRadius;
-
-  // Fields for helping process map and location changes
-  private final Map<String, Marker> mapMarkers = new HashMap<String, Marker>();
   private int mostRecentMapUpdate;
   private boolean hasSetUpInitialLocation;
   private String selectedPostObjectId;
@@ -193,7 +190,7 @@ public class MainActivity extends FragmentActivity implements LocationListener,
     postsQueryAdapter.setPaginationEnabled(false);
 
     // Attach the query adapter to the view
-    ListView postsListView = (ListView) findViewById(R.id.posts_listview);
+    final ListView postsListView = (ListView) findViewById(R.id.posts_listview);
     postsListView.setAdapter(postsQueryAdapter);
 
     // Set up the handler for an item's selection
@@ -232,6 +229,19 @@ public class MainActivity extends FragmentActivity implements LocationListener,
         doMapQuery();
       }
     });
+
+    //Rohit->Opening a new activity when info window in clicked
+    mapFragment.getMap().setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+      @Override
+      public void onInfoWindowClick(Marker marker) {
+        Intent intent = new Intent(MainActivity.this, InfoWindowClickActivity.class);
+//ROHIT -> CONFIRM WHAT'S BEING PASSED TO THE ACTIVIY
+        intent.putExtra(Activity.SEARCH_SERVICE, selectedPostObjectId);
+        Log.d(Application.APPTAG, "Passing object id :" + selectedPostObjectId);
+        startActivity(intent);
+      }
+    });
+
 
     // Set up the handler for the post button click
     Button postButton = (Button) findViewById(R.id.post_button);
@@ -389,7 +399,7 @@ public class MainActivity extends FragmentActivity implements LocationListener,
    */
   public void onConnected(Bundle bundle) {
     if (Application.APPDEBUG) {
-      Log.d("Connected to location services", Application.APPTAG);
+      Log.d(Application.APPTAG, "Connected to location services");
     }
     currentLocation = getLocation();
     startPeriodicUpdates();
@@ -400,7 +410,7 @@ public class MainActivity extends FragmentActivity implements LocationListener,
    */
   public void onDisconnected() {
     if (Application.APPDEBUG) {
-      Log.d("Disconnected from location services", Application.APPTAG);
+      Log.d(Application.APPTAG, "Disconnected from location services");
     }
   }
 
