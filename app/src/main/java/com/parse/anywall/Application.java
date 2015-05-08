@@ -46,6 +46,7 @@ public class Application extends android.app.Application {
         super.onCreate();
 
         ParseObject.registerSubclass(AnywallPost.class);
+        ParseObject.registerSubclass(AnywallMessage.class);
         Parse.initialize(this, "0K85aM0HnZl6Md3aticYVbUCOAuoJBsZ8BzVSr5K",
                 "2xTyrm1xPcd4jmZ2K2QjttNc5X76gkSANZiLX7x8");
         ParseInstallation.getCurrentInstallation().saveInBackground();

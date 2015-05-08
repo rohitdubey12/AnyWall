@@ -37,18 +37,23 @@ public class InfoWindowClickActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_infowindow_click);
-        String postObjid = getIntent().getParcelableExtra(Application.SEARCH_SERVICE);
+        String postObjId;
+	//-------String postObjid = getIntent().getParcelableExtra(Application.SEARCH_SERVICE);
+	if(savedInstanceState==null){
+		Bundle extras = getIntent().getExtras();
+  		if(extras == null) {
+        		postObjId= null;
+		} else { 
+        		postObjId= extras.getString("PostId");
+    		} 
+	} else { 
+    		postObjId= (String) savedInstanceState.getSerializable("PostId");
+	}
         //Rohit-> we have the object id of the post selected
-        findUser(postObjid);
+        findUser(postObjId);
+
 
         //SET UP POST TEXT
-        textViewPostDesc = (TextView) findViewById(R.id.textViewInfoClick);
-        textViewPostDesc.setText(SelectedPost.getText());
-
-        //SET USERNAME TO INITIATOR
-        usernameTextView = (TextView) findViewById(R.id.textViewInfoClick2);
-        usernameTextView.setText(initiator.getUsername());
-
         postReply = (EditText) findViewById(R.id.editTextPostClick);
         postReply.setText("Type your message here for the user here. Make sure you leave contact details and finish in 140 characters...");
         postReply.setSelectAllOnFocus(true);
@@ -59,8 +64,8 @@ public class InfoWindowClickActivity extends Activity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                updatePostButtonState();
-                updateCharacterCountTextViewText();
+             //   updatePostButtonState();
+              //  updateCharacterCountTextViewText();
             }
 
             @Override
@@ -78,8 +83,8 @@ public class InfoWindowClickActivity extends Activity {
             }
         });
 
-        updatePostButtonState();
-        updateCharacterCountTextViewText();
+//        updatePostButtonState();
+//        updateCharacterCountTextViewText();
     }
 
 
@@ -123,11 +128,11 @@ public class InfoWindowClickActivity extends Activity {
 
 
     public ParseUser findUser(String postObjectId) {
+        Log.v("FIN", "finding user for post" + postObjectId);
         ParseQuery<AnywallPost> userQuery = AnywallPost.getQuery();
-        userQuery.whereContains("objectId", postObjectId);
+        userQuery.whereEqualTo("objectId", postObjectId);
         userQuery.include("user");
         userQuery.include("text");
-
         final ProgressDialog dialog = new ProgressDialog(InfoWindowClickActivity.this);
         //Rohit-> put string in R.String.
         dialog.setMessage("Retreiving Post");
@@ -139,6 +144,7 @@ public class InfoWindowClickActivity extends Activity {
             public void done(List<AnywallPost> list, ParseException e) {
 
                 dialog.dismiss();
+                Log.v("FIN","Got results");
                 if (e != null) {
                     if (Application.APPDEBUG) {
                         Log.d(Application.APPTAG, "An error occurred while trying to retrieve Post.", e);
@@ -148,6 +154,14 @@ public class InfoWindowClickActivity extends Activity {
                         initiator = post.getUser();
                         SelectedPost = post;
                     }
+
+                    textViewPostDesc = (TextView) findViewById(R.id.textViewInfoClick);
+                    textViewPostDesc.setText(SelectedPost.getText());
+
+                    //SET USERNAME TO INITIATOR
+                    usernameTextView = (TextView) findViewById(R.id.textViewInfoClick2);
+                    usernameTextView.setText(initiator.getUsername());
+
                 }
             }
         });

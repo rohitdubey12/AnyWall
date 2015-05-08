@@ -236,7 +236,7 @@ public class MainActivity extends FragmentActivity implements LocationListener,
       public void onInfoWindowClick(Marker marker) {
         Intent intent = new Intent(MainActivity.this, InfoWindowClickActivity.class);
 //ROHIT -> CONFIRM WHAT'S BEING PASSED TO THE ACTIVIY
-        intent.putExtra(Activity.SEARCH_SERVICE, selectedPostObjectId);
+        intent.putExtra("PostId", selectedPostObjectId);
         Log.d(Application.APPTAG, "Passing object id :" + selectedPostObjectId);
         startActivity(intent);
       }
