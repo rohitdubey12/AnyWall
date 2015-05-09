@@ -47,6 +47,7 @@ import com.parse.ParseException;
 import com.parse.ParseGeoPoint;
 import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
+import com.parse.ParseUser;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -119,6 +120,7 @@ public class MainActivity extends FragmentActivity implements LocationListener,
   private int mostRecentMapUpdate;
   private boolean hasSetUpInitialLocation;
   private String selectedPostObjectId;
+  private AnywallPost selectedPost;
   private Location lastLocation;
   private Location currentLocation;
 
@@ -198,6 +200,7 @@ public class MainActivity extends FragmentActivity implements LocationListener,
       public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         final AnywallPost item = postsQueryAdapter.getItem(position);
         selectedPostObjectId = item.getObjectId();
+        selectedPost=item;
         mapFragment.getMap().animateCamera(
             CameraUpdateFactory.newLatLng(new LatLng(item.getLocation().getLatitude(), item
                 .getLocation().getLongitude())), new CancelableCallback() {
@@ -236,8 +239,10 @@ public class MainActivity extends FragmentActivity implements LocationListener,
       public void onInfoWindowClick(Marker marker) {
         Intent intent = new Intent(MainActivity.this, InfoWindowClickActivity.class);
 //ROHIT -> CONFIRM WHAT'S BEING PASSED TO THE ACTIVIY
-        intent.putExtra("PostId", selectedPostObjectId);
-        Log.d(Application.APPTAG, "Passing object id :" + selectedPostObjectId);
+        intent.putExtra("UserId", selectedPost.getUser().getObjectId());
+        intent.putExtra("UserName", selectedPost.getUser().getUsername());
+        intent.putExtra("PostText",selectedPost.getText());
+        Log.d(Application.APPTAG, "Passing:" + selectedPost.getObjectId()+ selectedPost.getUser().getUsername()+selectedPost.getText());
         startActivity(intent);
       }
     });
