@@ -21,5 +21,6 @@
     <string name="title_activity_post_click">PostClickActivity</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_inbox">InboxActivity</string>
 
 </resources>

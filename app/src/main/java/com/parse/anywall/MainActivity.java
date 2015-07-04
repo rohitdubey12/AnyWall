@@ -265,6 +265,19 @@ public class MainActivity extends FragmentActivity implements LocationListener,
         startActivity(intent);
       }
     });
+
+  //ROHIT-> inbox activity
+
+    Button inboxButton = (Button)findViewById(R.id.inbox_button);
+    inboxButton.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Intent intent = new Intent(MainActivity.this, InboxActivity.class);
+        startActivity(intent);
+      }
+    });
+
+
   }
 
   /*

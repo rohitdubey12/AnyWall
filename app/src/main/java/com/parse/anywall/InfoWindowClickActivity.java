@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.util.SparseIntArray;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,12 +16,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.FindCallback;
+import com.parse.FunctionCallback;
+import com.parse.GetCallback;
 import com.parse.ParseACL;
+import com.parse.ParseCloud;
 import com.parse.ParseException;
+import com.parse.ParseInstallation;
+import com.parse.ParsePush;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -96,6 +103,19 @@ public class InfoWindowClickActivity extends Activity {
 
         helper = ParseUser.getCurrentUser();
 
+        //attempt to retrieve initiator/recipient
+        ParseQuery<ParseUser> query = ParseUser.getQuery();
+        query.getInBackground(postUserId, new GetCallback<ParseUser>() {
+            @Override
+            public void done(ParseUser parseUser, ParseException e) {
+                if(e==null){
+                    initiator=parseUser;
+                }else{
+                    //something went wrong
+                }
+            }
+        });
+
         offerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -136,6 +156,30 @@ public class InfoWindowClickActivity extends Activity {
             }
         });
 
+
+        //send push notification to recipient
+        String pushText= helper.getUsername() + "Just Offered to help you";
+
+        //insecure way
+        ParseQuery pushQuery = ParseInstallation.getQuery();
+        pushQuery.whereEqualTo("user", initiator);
+        ParseUser currentUser = ParseUser.getCurrentUser();
+        ParsePush push = new ParsePush();
+        push.setQuery(pushQuery); // Set our Installation query
+        push.setMessage(pushText);
+        push.sendInBackground();
+
+        /*
+        HashMap<String, Object> params= new HashMap<String, Object>();
+        params.put("recipientId",initiator);
+        params.put("message", pushText);
+        ParseCloud.callFunctionInBackground("sendPushToUser", params, new FunctionCallback<String>() {
+            @Override
+            public void done(String s, ParseException e) {
+                Log.v("FIN","Push notification sent");
+            }
+        });
+        */
     }
 
     @Override

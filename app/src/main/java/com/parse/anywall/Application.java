@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.parse.Parse;
+import com.parse.ParseFacebookUtils;
 import com.parse.ParseInstallation;
 import com.parse.ParseObject;
 
@@ -49,6 +50,8 @@ public class Application extends android.app.Application {
         ParseObject.registerSubclass(AnywallMessage.class);
         Parse.initialize(this, "0K85aM0HnZl6Md3aticYVbUCOAuoJBsZ8BzVSr5K",
                 "2xTyrm1xPcd4jmZ2K2QjttNc5X76gkSANZiLX7x8");
+        ParseFacebookUtils.initialize("622395781231182");
+        //ParseFacebookUtils.initialize(context);
         ParseInstallation.getCurrentInstallation().saveInBackground();
 
         preferences = getSharedPreferences("com.parse.anywall", Context.MODE_PRIVATE);

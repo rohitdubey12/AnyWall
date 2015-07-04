@@ -37,6 +37,7 @@ public class AnywallMessage extends ParseObject {
     }
 
     public void setRecipient(ParseUser value) {
+        //replaced arguments with string instead of ParseUser
         put("recipient", value);
     }
 }

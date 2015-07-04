@@ -57,9 +57,11 @@
         android:id="@+id/PostClickCharacterCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textViewInfoClick2"
-        android:layout_alignStart="@+id/textViewInfoClick2"
-        android:layout_below="@+id/editTextPostClick"
         android:text="Small Text"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextPostClick"
+        android:layout_alignRight="@+id/editTextPostClick"
+        android:layout_alignEnd="@+id/editTextPostClick" />
 </RelativeLayout>

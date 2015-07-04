@@ -23,6 +23,13 @@
         <dex dex="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\pre-dexed\debug\classes-4c21eff499f9f2c95e8bee9c59395ad9f54b0d34.jar" />
     </item>
     <item
+        jar="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\3.20.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="66236ebe4d86dafbfc30b4fd7e5917ba2a645b35">
+        <dex dex="C:\Users\Rohit\Google Drive\UB\Classes\Sem2\646\Project\App\App646_v3\app\build\intermediates\pre-dexed\debug\classes-2924ec0e1a01c398cc97bab49d603c267467ecd3.jar" />
+    </item>
+    <item
         jar="C:\Users\Rohit\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
         jumboMode="false"
         revision="21.1.2"
