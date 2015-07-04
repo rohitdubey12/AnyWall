@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.1.2/res/values/values.xml -->
+    <eat-comment/>
+    <color name="com_facebook_blue">#3B5998</color>
+    <color name="com_facebook_button_background_color">#415dae</color>
+    <color name="com_facebook_button_background_color_disabled">#bdc1c9</color>
+    <color name="com_facebook_button_background_color_pressed">#2f477a</color>
+    <color name="com_facebook_button_like_background_color_selected">#7c8fc8</color>
+    <color name="com_facebook_button_login_silver_background_color">#f4f6f8</color>
+    <color name="com_facebook_button_login_silver_background_color_pressed">#e9eaf0</color>
+    <color name="com_facebook_button_send_background_color">#0084ff</color>
+    <color name="com_facebook_button_send_background_color_pressed">#006fff</color>
+    <color name="com_facebook_likeboxcountview_border_color">#6a7180</color>
+    <color name="com_facebook_likeboxcountview_text_color">#6a7180</color>
+    <color name="com_facebook_likeview_text_color">#6a7180</color>
+    <color name="com_facebook_share_button_text_color">#FFFFFF</color>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.2.42/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_default_background">#FFDD4B39</color>
+    <color name="common_signin_btn_light_text_default">#FF737373</color>
+    <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_light_text_focused">#FF737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <declare-styleable name="AdsAttrs"><attr format="string" name="adSize"/><attr format="string" name="adSizes"/><attr format="string" name="adUnitId"/></declare-styleable>
+    <declare-styleable name="MapAttrs"><attr format="enum" name="mapType"><enum name="none" value="0"/><enum name="normal" value="1"/><enum name="satellite" value="2"/><enum name="terrain" value="3"/><enum name="hybrid" value="4"/></attr><attr format="float" name="cameraBearing"/><attr format="float" name="cameraTargetLat"/><attr format="float" name="cameraTargetLng"/><attr format="float" name="cameraTilt"/><attr format="float" name="cameraZoom"/><attr format="boolean" name="uiCompass"/><attr format="boolean" name="uiRotateGestures"/><attr format="boolean" name="uiScrollGestures"/><attr format="boolean" name="uiTiltGestures"/><attr format="boolean" name="uiZoomControls"/><attr format="boolean" name="uiZoomGestures"/><attr format="boolean" name="useViewLifecycle"/><attr format="boolean" name="zOrderOnTop"/></declare-styleable>
+    <declare-styleable name="com_facebook_like_view"><attr format="color" name="com_facebook_foreground_color"/><attr format="string" name="com_facebook_object_id"/><attr name="com_facebook_object_type"><enum name="unknown" value="0"/><enum name="open_graph" value="1"/><enum name="page" value="2"/></attr><attr name="com_facebook_style"><enum name="standard" value="0"/><enum name="button" value="1"/><enum name="box_count" value="2"/></attr><attr name="com_facebook_auxiliary_view_position"><enum name="bottom" value="0"/><enum name="inline" value="1"/><enum name="top" value="2"/></attr><attr name="com_facebook_horizontal_alignment"><enum name="center" value="0"/><enum name="left" value="1"/><enum name="right" value="2"/></attr></declare-styleable>
+    <declare-styleable name="com_facebook_login_view"><attr format="boolean" name="com_facebook_confirm_logout"/><attr format="string" name="com_facebook_login_text"/><attr format="string" name="com_facebook_logout_text"/><attr name="com_facebook_tooltip_mode"><enum name="automatic" value="0"/><enum name="display_always" value="1"/><enum name="never_display" value="2"/></attr></declare-styleable>
+    <declare-styleable name="com_facebook_profile_picture_view"><attr name="com_facebook_preset_size"><enum name="small" value="-2"/><enum name="normal" value="-3"/><enum name="large" value="-4"/></attr><attr format="boolean" name="com_facebook_is_cropped"/></declare-styleable>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.1.2/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="com_facebook_likeboxcountview_border_radius">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_border_width">1dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_caret_height">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_caret_width">6dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_text_padding">6dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_text_size">11.0sp</dimen>
+    <dimen name="com_facebook_likeview_edge_padding">2dp</dimen>
+    <dimen name="com_facebook_likeview_internal_padding">6dp</dimen>
+    <dimen name="com_facebook_likeview_text_size">11.0sp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_large">180dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_normal">100dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_small">50dp</dimen>
+    <dimen name="com_facebook_share_button_compound_drawable_padding">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_bottom">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_left">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_right">16dp</dimen>
+    <dimen name="com_facebook_share_button_padding_top">12dp</dimen>
+    <dimen name="com_facebook_share_button_text_size">16.0sp</dimen>
+    <dimen name="com_facebook_tooltip_horizontal_padding">10dp</dimen>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.2.42/res/values/version.xml -->
+    <eat-comment/>
+    <integer name="google_play_services_version">4242000</integer>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="activity_post_title">Create a Post</string>
+    <string name="app_name">Friend In Need</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.2.42/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="auth_client_needs_enabling_title">
+      An application requires Google Play Services to be enabled.
+  </string>
+    <string name="auth_client_needs_installation_title">
+      An application requires installation of Google Play Services.
+  </string>
+    <string name="auth_client_needs_update_title">
+      An application requires an update for Google Play Services.
+  </string>
+    <string name="auth_client_play_services_err_notification_msg">Google Play services error</string>
+    <string name="auth_client_requested_by_msg">Requested by <ns1:g id="app_name">%1$s</ns1:g></string>
+    <string name="auth_client_using_bad_version_title">
+      An application attempted to use a bad version of Google Play Services.
+  </string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="character_count_placeholder">0/140</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.1.2/res/values/values.xml -->
+    <eat-comment/>
+    <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
+    <string name="com_facebook_like_button_liked">Liked</string>
+    <string name="com_facebook_like_button_not_liked">Like</string>
+    <string name="com_facebook_loading">Loading...</string>
+    <string name="com_facebook_loginview_cancel_action">Cancel</string>
+    <string name="com_facebook_loginview_log_in_button">Log in</string>
+    <string name="com_facebook_loginview_log_in_button_long">Log in with Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Log out</string>
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_loginview_logged_in_as">Logged in as: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook</string>
+    <string name="com_facebook_send_button_text">Send</string>
+    <string name="com_facebook_share_button_text">Share</string>
+    <string name="com_facebook_tooltip_default">New! You\'re in control - choose what info you want to share with apps.</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.2.42/res/values/strings.xml -->
+    <eat-comment/>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">This app won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Get Google Play services</string>
+    <string msgid="2122112764540849864" name="common_google_play_services_install_text_phone">This app won\'t run without Google Play services, which are missing from your phone.</string>
+    <string msgid="7351599665250191022" name="common_google_play_services_install_text_tablet">This app won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_date_text">The date on the device appears to be incorrect. Please check the date on the device.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">This app won\'t run unless you update Google Play services.</string>
+    <string msgid="1788179980625863495" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment/>
+    <string name="error_blank_password">enter a password</string>
+    <string name="error_blank_username">enter a username</string>
+    <string name="error_end">.</string>
+    <string name="error_intro">"Please "</string>
+    <string name="error_join">", and "</string>
+    <string name="error_mismatched_passwords">enter the same password twice</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="hello_world">Hello world!</string>
+    <string name="login">Log in</string>
+    <string name="logout_full">Log out </string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.1.2/res/values/values.xml -->
+    <eat-comment/>
+    <string name="messenger_send_button_text">Send</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="parse">Parse</string>
+    <string name="post">Post</string>
+    <string name="post_out_of_range">Can\'t view post! Get closer.</string>
+    <string name="powered_by">Powered by</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment/>
+    <string name="progress_login">Logging you in…</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="progress_post">Posting…</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment/>
+    <string name="progress_signup">Signing you up…</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_again">Password Again</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="prompt_post">Post</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment/>
+    <string name="prompt_username">Username</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="search_distance">Search Distance</string>
+    <string name="settings_distance_format">%d feet</string>
+    <string name="signup">Sign up</string>
+    <string name="slogan">A Friend in Need is a Friend indeed</string>
+    <string name="title_activity_inbox">InboxActivity</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment/>
+    <string name="title_activity_login">Log in</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="title_activity_post_click">PostClickActivity</string>
+    <string name="title_activity_settings">Settings</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment/>
+    <string name="title_activity_signup">Sign up</string>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <!-- From: file:/C:/Users/Rohit/Google%20Drive/UB/Classes/Sem2/646/Project/App/App646_v3/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.1.2/res/values/values.xml -->
+    <eat-comment/>
+    <style name="MessengerButton">
+    <item name="android:clickable">true</item>
+  </style>
+    <style name="MessengerButton.Blue">
+    <item name="android:background">@drawable/messenger_button_blue_bg_selector</item>
+  </style>
+    <style name="MessengerButton.Blue.Large">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">44dp</item>
+    <item name="android:layout_marginLeft">16dp</item>
+    <item name="android:layout_marginRight">16dp</item>
+  </style>
+    <style name="MessengerButton.Blue.Small">
+    <item name="android:layout_width">158dp</item>
+    <item name="android:layout_height">36dp</item>
+  </style>
+    <style name="MessengerButton.White">
+    <item name="android:background">@drawable/messenger_button_white_bg_selector</item>
+  </style>
+    <style name="MessengerButton.White.Large">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">44dp</item>
+    <item name="android:layout_marginLeft">16dp</item>
+    <item name="android:layout_marginRight">16dp</item>
+  </style>
+    <style name="MessengerButton.White.Small">
+    <item name="android:layout_width">158dp</item>
+    <item name="android:layout_height">36dp</item>
+  </style>
+    <style name="MessengerButtonText">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:drawablePadding">4dp</item>
+    <item name="android:gravity">center</item>
+    <!--suppress NewApi -->
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+    <style name="MessengerButtonText.Blue">
+    <item name="android:textColor">#ffffff</item>
+  </style>
+    <style name="MessengerButtonText.Blue.Large">
+    <item name="android:drawableLeft">@drawable/messenger_bubble_large_white</item>
+  </style>
+    <style name="MessengerButtonText.Blue.Small">
+    <item name="android:drawableLeft">@drawable/messenger_bubble_small_white</item>
+  </style>
+    <style name="MessengerButtonText.White">
+    <item name="android:textColor">#0084ff</item>
+  </style>
+    <style name="MessengerButtonText.White.Large">
+    <item name="android:drawableLeft">@drawable/messenger_bubble_large_blue</item>
+  </style>
+    <style name="MessengerButtonText.White.Small">
+    <item name="android:drawableLeft">@drawable/messenger_bubble_small_blue</item>
+  </style>
+    <style name="com_facebook_button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/com_facebook_button_background</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14.0dp</item>
+    </style>
+    <style name="com_facebook_button_like" parent="com_facebook_button">
+        <item name="android:background">@drawable/com_facebook_button_like_background</item>
+    </style>
+    <style name="com_facebook_button_send" parent="com_facebook_button">
+        <item name="android:background">@drawable/com_facebook_button_send_background</item>
+        <item name="android:drawableLeft">@drawable/com_facebook_button_send_icon</item>
+        <item name="android:text">@string/com_facebook_send_button_text</item>
+    </style>
+    <style name="com_facebook_button_share" parent="com_facebook_button">
+        <item name="android:drawableLeft">@drawable/com_facebook_button_icon</item>
+        <item name="android:text">@string/com_facebook_share_button_text</item>
+    </style>
+    <style name="com_facebook_loginview_default_style" parent="com_facebook_button">
+        <item name="android:drawableLeft">@drawable/com_facebook_button_icon</item>
+    </style>
+    <style name="com_facebook_loginview_silver_style" parent="com_facebook_loginview_default_style">
+        <item name="android:background">@drawable/com_facebook_button_login_silver_background</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:textColor">#4b5164</item>
+    </style>
+    <style name="tooltip_bubble_text">
+	    <item name="android:textColor">@android:color/white</item>
+	    <item name="android:gravity">left</item>
+	    <item name="android:textSize">12sp</item>
+	    <item name="android:shadowDy">-1</item>
+	    <item name="android:shadowRadius">0.25</item>
+	    <item name="android:shadowColor">#40000000</item>
+    </style>
+</resources>
